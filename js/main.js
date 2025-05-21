@@ -330,3 +330,18 @@ function isValidEmail(email) {
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cookieBar = document.getElementById("cookieBar");
+  const acceptBtn = document.getElementById("acceptCookies");
+
+  // Показываем только если не принято
+  if (!localStorage.getItem("cookiesAccepted")) {
+    cookieBar.style.display = "flex";
+  }
+
+  acceptBtn.addEventListener("click", function () {
+    localStorage.setItem("cookiesAccepted", "true");
+    cookieBar.style.display = "none";
+  });
+});
