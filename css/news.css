@@ -1,0 +1,135 @@
+/* News Page Styles */
+.news-hero {
+  height: 40vh;
+  min-height: 300px;
+  background: var(--gradient-sky);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.news-hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, var(--color-white), transparent);
+  z-index: 1;
+}
+
+.news-hero-content {
+  max-width: 800px;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.news-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.news-subtitle {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.news-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.news-card {
+  background-color: var(--color-white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+  transition: transform var(--transition-medium);
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-large);
+}
+
+.news-image {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-medium);
+}
+
+.news-card:hover .news-image img {
+  transform: scale(1.1);
+}
+
+.news-date {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--color-desert-orange);
+  color: var(--color-white);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.news-content {
+  padding: 1.5rem;
+}
+
+.news-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-earth-brown);
+}
+
+.news-excerpt {
+  margin-bottom: 1.5rem;
+  color: var(--color-stone-gray);
+}
+
+.read-more {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--gradient-sunset);
+  color: var(--color-white);
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: transform var(--transition-fast);
+}
+
+.read-more:hover {
+  transform: translateX(5px);
+  color: var(--color-white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .news-title {
+    font-size: 2.5rem;
+  }
+
+  .news-container {
+    grid-template-columns: 1fr;
+  }
+}

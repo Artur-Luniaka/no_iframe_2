@@ -1,0 +1,50 @@
+{
+    "meta": {
+        "title": "Caution Zone | Dino Run Run",
+        "description": "Important disclaimers and information about the Dino Run Run game."
+    },
+    "sections": [
+        {
+            "title": "Age Appropriateness",
+            "description": "Dino Run Run is designed for players of all ages, but we recommend parental guidance for children under 8 years old. The game contains mild cartoon violence as dinosaurs navigate obstacles and avoid predators.",
+            "items": [
+                "Suitable for players aged 8+",
+                "Contains mild cartoon violence",
+                "No graphic content or realistic depictions of violence",
+                "Parental guidance recommended for younger players"
+            ]
+        },
+        {
+            "title": "Health and Safety",
+            "description": "As with any video game, please take regular breaks to avoid eye strain and maintain physical well-being. We recommend playing in a well-lit room and maintaining proper posture.",
+            "items": [
+                "Take a 15-minute break for every hour of gameplay",
+                "Play in a well-lit environment",
+                "Maintain proper posture while playing",
+                "Discontinue play if you experience dizziness, nausea, or discomfort"
+            ],
+            "highlight": "If you have a history of photosensitive epilepsy or seizures, please consult a doctor before playing Dino Run Run."
+        },
+        {
+            "title": "In-App Purchases",
+            "description": "Dino Run Run offers optional in-app purchases that enhance gameplay but are not required to enjoy the core game experience. These purchases may include cosmetic items, additional dinosaur species, and convenience features.",
+            "items": [
+                "All core gameplay features are available without additional purchase",
+                "In-app purchases range from $0.99 to $9.99",
+                "Parental controls are available to restrict purchases",
+                "No advertisements are shown to players who have made any purchase"
+            ]
+        },
+        {
+            "title": "Online Interactions",
+            "description": "Dino Run Run includes online features such as leaderboards and tournaments. We are committed to providing a safe environment for all players, but online interactions are not rated by the ESRB.",
+            "items": [
+                "Username and profile picture are visible to other players",
+                "No direct messaging or chat features are included",
+                "Leaderboards display usernames and scores only",
+                "Report inappropriate usernames through our support system"
+            ],
+            "highlight": "Remember to use appropriate usernames and never share personal information through your profile."
+        }
+    ]
+}

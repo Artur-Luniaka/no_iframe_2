@@ -1,0 +1,232 @@
+/* Homepage Styles */
+.hero-section {
+  height: 80vh;
+  min-height: 500px;
+  background: var(--gradient-sky);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, var(--color-earth-brown), transparent);
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--gradient-sunset);
+  color: var(--color-white);
+  font-weight: bold;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: var(--shadow-medium);
+  transition: transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-large);
+  color: var(--color-white);
+}
+
+/* Game Sections */
+.game-section {
+  padding: 5rem 0;
+  position: relative;
+}
+
+.game-section:nth-child(odd) {
+  background-color: var(--color-fossil-beige);
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.section-image {
+  height: 350px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: var(--shadow-large);
+}
+
+/* Run Flow Section */
+.run-flow-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.flow-step {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  box-shadow: var(--shadow-medium);
+  transition: transform var(--transition-medium);
+}
+
+.flow-step:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-large);
+}
+
+.flow-icon {
+  flex: 0 0 100px;
+  height: 100px;
+  background: var(--gradient-sunset);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.flow-content {
+  flex: 1;
+}
+
+.flow-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-earth-brown);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background: var(--gradient-desert);
+  color: var(--color-white);
+  padding: 5rem 0;
+}
+
+.testimonials-section .section-title {
+  color: var(--color-white);
+}
+
+.testimonials-section .section-title::after {
+  background: var(--color-white);
+}
+
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.testimonial-card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: var(--shadow-medium);
+  transition: transform var(--transition-medium);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.testimonial-text::before,
+.testimonial-text::after {
+  content: '"';
+  font-size: 2rem;
+  color: var(--color-desert-orange);
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-sand);
+  overflow: hidden;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-weight: bold;
+}
+
+.author-title {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .flow-step {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial-card {
+    min-width: 100%;
+  }
+}

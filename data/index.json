@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "Launch Pad | Dino Run Run",
+    "description": "Welcome to Dino Run Run - an exciting prehistoric adventure game where you outrun extinction!"
+  },
+  "sections": [
+    {
+      "id": "dino-sprint",
+      "title": "Dino Sprint",
+      "description": "Race through prehistoric landscapes as your favorite dinosaur. With intuitive controls and increasing difficulty, Dino Sprint offers a thrilling experience for players of all ages. Dodge obstacles, collect power-ups, and set new high scores!",
+      "image": "./images/home-1.jpg"
+    },
+    {
+      "id": "obstacle-field",
+      "title": "Obstacle Field",
+      "description": "Navigate through challenging terrain filled with volcanic eruptions, falling meteors, and prehistoric predators. Each level introduces new obstacles that will test your reflexes and strategic thinking. Can you survive the Obstacle Field?",
+      "image": "./images/home-2.jpg"
+    },
+    {
+      "id": "power-up-zone",
+      "title": "Power-Up Zone",
+      "description": "Discover special abilities and power-ups that transform your dinosaur and enhance your gameplay. From super speed to invincibility, these power-ups will help you overcome the toughest challenges and achieve the highest scores.",
+      "image": "./images/home-3.jpg"
+    },
+    {
+      "id": "run-flow",
+      "title": "Run Flow",
+      "steps": [
+        {
+          "title": "Choose Your Dino",
+          "description": "Select from a variety of dinosaur species, each with unique abilities and characteristics. From the speedy Velociraptor to the powerful T-Rex, find the perfect prehistoric partner for your running adventure."
+        },
+        {
+          "title": "Master Controls",
+          "description": "Learn the simple yet responsive controls that allow you to jump, slide, and dodge obstacles with precision. Practice makes perfect as you develop the reflexes needed to survive in this prehistoric world."
+        },
+        {
+          "title": "Collect Resources",
+          "description": "Gather ancient amber, fossils, and other valuable resources as you run. These collectibles can be used to unlock new dinosaurs, upgrade abilities, and customize your prehistoric runner."
+        },
+        {
+          "title": "Upgrade Abilities",
+          "description": "Enhance your dinosaur's natural abilities through the evolution system. Improve speed, jumping power, and special skills to become the ultimate survivor in this challenging prehistoric environment."
+        },
+        {
+          "title": "Compete Globally",
+          "description": "Challenge players from around the world on the global leaderboards. Set new records, earn achievements, and prove that your dinosaur has what it takes to be the champion of the prehistoric era."
+        }
+      ]
+    },
+    {
+      "id": "survival-track",
+      "title": "Survival Track",
+      "description": "Test your endurance in the endless Survival Track mode. How long can you outrun extinction? With procedurally generated levels that become increasingly challenging, this mode offers unlimited replayability and the ultimate test of skill.",
+      "image": "./images/home-4.jpg"
+    }
+  ],
+  "testimonials": [
+    {
+      "text": "Dino Run Run is the most addictive game I've played this year! The controls are responsive, the graphics are stunning, and the gameplay is endlessly entertaining.",
+      "name": "Sarah J.",
+      "title": "Casual Gamer"
+    },
+    {
+      "text": "As a paleontology enthusiast, I appreciate the attention to detail in the dinosaur designs. Plus, the game is incredibly fun and challenging!",
+      "name": "Dr. Michael T.",
+      "title": "Dinosaur Enthusiast"
+    },
+    {
+      "text": "My kids can't get enough of this game, and I find myself playing it when they're asleep! Perfect for dinosaur lovers of all ages.",
+      "name": "Emma R.",
+      "title": "Parent & Gamer"
+    }
+  ]
+}

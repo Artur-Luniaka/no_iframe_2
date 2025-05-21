@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "title": "Reach Out | Dino Run Run",
+        "description": "Contact the Dino Run Run team for support, feedback, or business inquiries."
+    },
+    "contactInfo": {
+        "address": "123 Dino Lane, Sydney NSW 2000, Australia",
+        "phone": "+61 2 1234 5678",
+        "email": "info@domain.com",
+        "hours": "Monday - Friday: 9am - 5pm AEST"
+    }
+}

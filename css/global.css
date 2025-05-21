@@ -1,0 +1,207 @@
+/* Import page-specific CSS */
+@import "header.css";
+@import "footer.css";
+@import "index.css";
+@import "news.css";
+@import "disclaimer.css";
+@import "contact.css";
+@import "privacy.css";
+@import "cookies.css";
+
+/* CSS Variables */
+:root {
+  /* Colors */
+  --color-earth-brown: #8b5a2b;
+  --color-sand: #f4a460;
+  --color-desert-orange: #ff8c00;
+  --color-sunset-red: #ff4500;
+  --color-jungle-green: #2e8b57;
+  --color-sky-blue: #87ceeb;
+  --color-night-blue: #191970;
+  --color-stone-gray: #708090;
+  --color-fossil-beige: #f5f5dc;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Gradients */
+  --gradient-sunset: linear-gradient(
+    to right,
+    var(--color-sunset-red),
+    var(--color-desert-orange),
+    var(--color-sand)
+  );
+  --gradient-earth: linear-gradient(
+    to bottom,
+    var(--color-jungle-green),
+    var(--color-earth-brown)
+  );
+  --gradient-sky: linear-gradient(
+    to bottom,
+    var(--color-sky-blue),
+    var(--color-night-blue)
+  );
+  --gradient-desert: linear-gradient(
+    to right,
+    var(--color-sand),
+    var(--color-desert-orange)
+  );
+
+  /* Shadows */
+  --shadow-small: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --shadow-large: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Fonts */
+  --font-primary: "Segoe UI", "Helvetica Neue", "Inter", "Tahoma", system-ui,
+    sans-serif;
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-earth-brown);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-desert-orange);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Common Components */
+.main-content {
+  min-height: calc(100vh - 200px);
+  padding: 2rem 0;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-earth-brown);
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--gradient-sunset);
+  border-radius: 2px;
+}
+
+/* Cookie Bar */
+.cookie-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--gradient-earth);
+  color: var(--color-white);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: var(--shadow-large);
+  transform: translateY(100%);
+  transition: transform var(--transition-medium);
+}
+
+.cookie-bar.active {
+  transform: translateY(0);
+}
+
+.cookie-message {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cookie-accept,
+.cookie-decline {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color var(--transition-fast);
+}
+
+.cookie-accept {
+  background-color: var(--color-desert-orange);
+  color: var(--color-white);
+}
+
+.cookie-accept:hover {
+  background-color: var(--color-sunset-red);
+}
+
+.cookie-decline {
+  background-color: var(--color-stone-gray);
+  color: var(--color-white);
+}
+
+.cookie-decline:hover {
+  background-color: var(--color-night-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .cookie-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cookie-message {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Trail Tracker | Dino Run Run",
+    "description": "Stay updated with the latest news and updates from the Dino Run Run game."
+  },
+  "news": [
+    {
+      "title": "New Dinosaur Species Coming Soon!",
+      "date": "May 15, 2025",
+      "excerpt": "Get ready to welcome three new playable dinosaur species in our upcoming update! Each comes with unique abilities that will transform your gameplay experience.",
+      "image": "./images/news-1.png"
+    },
+    {
+      "title": "Prehistoric Tournament Announced",
+      "date": "May 10, 2025",
+      "excerpt": "Join our first global tournament starting June 1st! Compete against players worldwide for exclusive in-game rewards and the title of Ultimate Prehistoric Champion.",
+      "image": "./images/news-2.png"
+    },
+    {
+      "title": "Volcanic Eruption: New Environment Revealed",
+      "date": "May 5, 2025",
+      "excerpt": "Our development team is excited to reveal our newest environment: The Volcanic Plains! Navigate through lava flows and ash clouds in this challenging new setting.",
+      "image": "./images/news-3.png"
+    }
+  ]
+}
